@@ -26,7 +26,10 @@ var startTimer = function() {
 
 var stopTimer = function() {
     clearInterval(millisecInt); clearInterval(secondsInt); clearInterval(minutesInt); clearInterval(hoursInt);
-   
+    document.getElementById('start').style.display='initial';
+    document.getElementById('lap').style.display='none';
+    document.getElementById('stop').style.display='none';
+    document.getElementById('reset').style.display='initial';    
 }
 
 var resetTimer = function() {
