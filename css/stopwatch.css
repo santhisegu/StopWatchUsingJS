@@ -1,0 +1,84 @@
+h1{ position: fixed;left: 630px;}
+button{
+	font-family: serif arial times;
+	font-size: 90%;
+	letter-spacing: 2px;
+	cursor:pointer;
+	padding: 14px 12px;
+	border-radius: 5px;
+	text-align: center;
+	margin: 25px 8px auto;
+	color: #FFF;
+}
+button:hover{
+	transform: scale(1.09);
+}
+#start{
+	background:#48633B;
+}
+#lap{
+	background:#E39C06;
+	display: none;
+}
+#stop{
+	background:#721329;
+	display: none;
+}
+#reset{
+	background:#48C9B0 ;
+	display: none;
+}
+#clear{
+	background:#BB8FCE;
+	position: fixed;
+	top:590px;
+	right:320px;
+	/*display: none;*/
+}
+#timer {
+    padding: 87px;
+    font-size: 27pt;
+    color: #3b3b3b;
+   
+}
+
+.time {
+    background-color: #d6d6d6;
+    padding:20px;
+    border-radius: 20px;
+}
+
+.time:hover {
+    background-color: #fefefe;
+}
+#laps {
+    border: 0px;
+    background-color: #3a3a3a;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12pt;
+    margin: 15px 4px 0 4px;
+}
+.Stopwatch{
+	background-color: black;
+	margin:12% 3% 0 13%;
+	width: 525px;
+	height: 355px;
+	border-radius: 5px;
+
+}
+.Records{
+	background-color:#000;
+    color: #fefefe;
+    border-radius: 5px;
+    margin:12% 3% 0% 10%;
+    width: 455px;
+    height: 455px;
+    padding: 12px;
+}
+
+body{
+	text-align: center;
+	display: flex;
+}
