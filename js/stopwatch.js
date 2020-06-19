@@ -59,5 +59,5 @@ var lap = function() {
     p.appendChild(ptext);
     var laps = document.getElementById("laps");
     laps.appendChild(p);
-
+    document.getElementById('laps').scrollTop = 9999999;
 }
