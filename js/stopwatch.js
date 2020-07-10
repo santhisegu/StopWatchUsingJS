@@ -18,18 +18,23 @@ var startTimer = function() {
         hours = ( hours > 59 ) ? 1 : ( hours + 1 ) ;
     },1000 * 60 * 60);
     document.getElementById('start').style.display='none';
-    document.getElementById('lap').style.display='initial';
+     document.getElementById('lap').style.display='initial';
+    document.getElementById('lap').style.margin='110% 14% 162% 62%';
     document.getElementById('stop').style.display='initial';
-    document.getElementById('reset').style.display='initial';   
+    document.getElementById('stop').style.margin='110% 14% 162%';
+    document.getElementById('reset').style.display='initial';
+    document.getElementById('reset').style.margin='110% 14% 162%';   
 
 }
 
 var stopTimer = function() {
     clearInterval(millisecInt); clearInterval(secondsInt); clearInterval(minutesInt); clearInterval(hoursInt);
     document.getElementById('start').style.display='initial';
+    document.getElementById('start').style.margin='235px 134%';
     document.getElementById('lap').style.display='none';
     document.getElementById('stop').style.display='none';
-    document.getElementById('reset').style.display='initial';    
+    document.getElementById('reset').style.display='initial';
+    document.getElementById('reset').style.margin='235px -81%';  
 }
 
 var resetTimer = function() {
@@ -39,7 +44,8 @@ var resetTimer = function() {
     document.getElementById('start').style.display='initial';
     document.getElementById('lap').style.display='none';
     document.getElementById('stop').style.display='none';
-    document.getElementById('reset').style.display='none';   
+    document.getElementById('reset').style.display='none'; 
+    document.getElementById('start').style.margin='315% 334%'; 
 }
 var clearLaps=function(){
     document.getElementById("laps").innerHTML = "";
@@ -54,6 +60,7 @@ var setTimeToHTML = function(hours, minutes, seconds, milliseconds) {
 
 var lap = function() {
     var p = document.createElement("p") ;
+    var count=0;
     var timer = document.getElementById("hours").innerText + " : " + document.getElementById("minutes").innerText + " : " + document.getElementById("seconds").innerText + " : " + document.getElementById("milliseconds").innerText ;
     var ptext = document.createTextNode(timer);
     p.appendChild(ptext);
